@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Gideon Roman", cursive;
+}
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+/* Section 1 */
+section.sec1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.sec1 .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+section.sec1 .container-blur {
+  background-color: #ffffff22;
+  padding: 5em;
+  backdrop-filter: blur(7px);
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+}
+
+section.sec1 .container-blur::before {
+  content: url(../images/person.png);
+  position: absolute;
+  right: 0;
+  bottom: -53%;
+}
+
+section.sec1 .container span {
+  font-size: 2em;
+}
+section.sec1 .container span:nth-child(1) {
+  font-weight: 300;
+}
+section.sec1 .container h1 {
+  font-size: 6em;
+  line-height: 1em;
+  margin: 20px 0;
+}
+
+/*--NAVBAR--*/
+
+section.sec1 .navbar {
+  width: 100%;
+  min-height: 100px;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+section.sec1 .navbar .row{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1 ;
+}
+section.sec1 .navbar .navbar-block {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.sec1 .navbar .navbar-block a {
+  color: grey;
+  font-size: 1.3em;
+  font-weight: 400;
+}
