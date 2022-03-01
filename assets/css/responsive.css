@@ -41,11 +41,58 @@
   section.sec1 .navbar {
     flex-direction: column;
   }
-  section.sec1 .navbar .row{
+  section.sec1 .navbar .row {
     height: 70px;
   }
   @media screen and (max-width: 500px) {
     section.sec1 .navbar {
-display: none;    }
+      display: none;
+    }
+  }
+}
+/* Section 2 */
+@media screen and (max-width: 1140px) {
+  section.sec2 .container .row-propos {
+    flex-direction: column;
+  }
+  section.sec2 .container .row{
+    align-items: center;
+    padding: 20px;
+  }
+  section.sec2 .container .row .propos-titre{
+    text-align: center;
+  }
+  section.sec2 .container .row .propos-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.sec2 .container .row:nth-child(2) .propos-text {
+    padding-left: 0px;
+}
+}
+@media screen and (max-width: 700px) {
+  section.sec2 .container .row {
+    flex-direction: column;
+    
+  }
+  section.sec2 .container .row .propos-text{
+    text-align: center;
+    margin-top: 25px;
+  }
+  section.sec2 .container .row-button{
+  padding-top: 55px;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  section.sec2 .container .row-button{
+    flex-direction: column;
+    align-items: center;
+  }
+  section.sec2 .container .row-button button{
+    margin: 10px 10px;
+    width: 280px;
+    justify-content: center;
   }
 }

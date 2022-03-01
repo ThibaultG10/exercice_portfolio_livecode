@@ -71,10 +71,10 @@ section.sec1 .navbar {
   display: flex;
   flex-direction: row;
 }
-section.sec1 .navbar .row{
+section.sec1 .navbar .row {
   display: flex;
   flex-direction: row;
-  flex-grow: 1 ;
+  flex-grow: 1;
 }
 section.sec1 .navbar .navbar-block {
   flex-grow: 1;
@@ -86,4 +86,100 @@ section.sec1 .navbar .navbar-block a {
   color: grey;
   font-size: 1.3em;
   font-weight: 400;
+}
+/* Section 2 */
+section.sec2 .container {
+  padding: 100px 0;
+}
+section.sec2 .container .row-propos{
+  display: flex;
+  flex-direction: row;
+}
+section.sec2 .container .row {
+  display: flex;
+  flex-direction: row;
+  flex: 50%;
+}
+section.sec2 .container .row > div {
+  flex: 50%;
+}
+
+section.sec2 .container .row .propos-titre {
+  color: black;
+  font-size: 2.3em;
+}
+section.sec2 .container .row .propos-text {
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  color: #585858;
+}
+section.sec2 .container .row:nth-child(2) .propos-text {
+  padding-left: 25px;
+}
+section.sec2 .container .row .big-square {
+  background-color: #f7e8ff;
+  width: 280px;
+  height: 280px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.sec2 .container .row .mini-square {
+  background-color: #edd2fc;
+  width: 245px;
+  height: 245px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px #dea3ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.sec2 .container .row .mini-square span {
+  position: relative;
+  top: -20px;
+  font-size: 8em;
+  color:white;
+  font-weight: 600;
+  -webkit-text-stroke:3px #e0a6ff;
+  text-shadow: 0px 6px 10px #b05edc;
+}
+section.sec2 .container .row .mini-square p {
+  position: relative;
+  top: -20px;
+  font-size: 1.2em;
+  color: #b05edc;
+}
+section.sec2 .container .row-button {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+section.sec2 .container .row-button button{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  margin: 0 10px;
+
+}
+section.sec2 .container .row-button button:nth-child(1){
+  background-color: white;
+  border: 2px solid grey;
+}
+section.sec2 .container .row-button button:nth-child(2){
+  background-color: #e8f0f9;
+  border:none;
+}
+section.sec2 .container .row-button button img{
+  margin-right: 15px;
+
 }
