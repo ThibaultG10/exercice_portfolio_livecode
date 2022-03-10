@@ -96,3 +96,31 @@
     justify-content: center;
   }
 }
+/* Section 3 */
+@media screen and (max-width: 1140px) {
+  section.sec3 .competence-card{
+    justify-content: space-evenly;
+  }
+  section.sec3 .competence-card .card{
+    margin: 0 5px 50px 5px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  section.sec3 .competence-titre{
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 545px) {
+ 
+  section.sec3 .competence-card .card{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+ section.sec3 .competence-titre h3{
+   font-size: 1.2em;
+ }
+ section.sec3 .competence-titre h1{
+  font-size: 2.5em;
+}
+}

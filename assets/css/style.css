@@ -91,7 +91,7 @@ section.sec1 .navbar .navbar-block a {
 section.sec2 .container {
   padding: 100px 0;
 }
-section.sec2 .container .row-propos{
+section.sec2 .container .row-propos {
   display: flex;
   flex-direction: row;
 }
@@ -141,9 +141,9 @@ section.sec2 .container .row .mini-square span {
   position: relative;
   top: -20px;
   font-size: 8em;
-  color:white;
+  color: white;
   font-weight: 600;
-  -webkit-text-stroke:3px #e0a6ff;
+  -webkit-text-stroke: 3px #e0a6ff;
   text-shadow: 0px 6px 10px #b05edc;
 }
 section.sec2 .container .row .mini-square p {
@@ -160,7 +160,7 @@ section.sec2 .container .row-button {
   flex-direction: row;
 }
 
-section.sec2 .container .row-button button{
+section.sec2 .container .row-button button {
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -169,17 +169,103 @@ section.sec2 .container .row-button button{
   color: black;
   font-weight: bold;
   margin: 0 10px;
-
 }
-section.sec2 .container .row-button button:nth-child(1){
+section.sec2 .container .row-button button:nth-child(1) {
   background-color: white;
   border: 2px solid grey;
 }
-section.sec2 .container .row-button button:nth-child(2){
+section.sec2 .container .row-button button:nth-child(2) {
   background-color: #e8f0f9;
-  border:none;
+  border: none;
 }
-section.sec2 .container .row-button button img{
+section.sec2 .container .row-button button img {
   margin-right: 15px;
+}
+/* Section 3 */
+section.sec3 .competence-titre {
+  position: relative;
+  padding-left: 30px;
+}
+section.sec3 .competence-titre::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 70%
+  );
+  top: 0;
+  left: 0;
+}
+section.sec3 .competence-titre h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: grey;
+}
+section.sec3 .competence-titre h1 {
+  font-weight: bold;
+  font-size: 4em;
+  color: black;
+}
+section.sec3 .competence-card {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.sec3 .competence-card .card {
+  height: 255px;
+  width: 255px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.25s;
+}
+section.sec3 .competence-card .card:hover {
+  transform: translateY(-25px);
+}
+section.sec3 .competence-card .card:nth-child(1) {
+  background-color: #d9fffc;
+}
+section.sec3 .competence-card .card:nth-child(1):hover {
+  box-shadow: 0px 70px 60px -50px #d9fffc;
+}
+section.sec3 .competence-card .card:nth-child(2) {
+  background-color: #e4ffc7;
+}
+section.sec3 .competence-card .card:nth-child(2):hover {
+  box-shadow: 0px 70px 60px -50px #e4ffc7;
+}
+section.sec3 .competence-card .card:nth-child(3) {
+  background-color: #fff3dd;
+}
+section.sec3 .competence-card .card:nth-child(3):hover {
+  box-shadow: 0px 70px 60px -50px #fff3dd;
+}
+section.sec3 .competence-card .card:nth-child(4) {
+  background-color: #ffe0e0;
+}
+section.sec3 .competence-card .card:nth-child(4):hover {
+  box-shadow: 0px 70px 60px -50px #ffe0e0;
+}
 
+section.sec3 .competence-card .icon-competence {
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 33px 60px -40px black;
+}
+section.sec3 .competence-card .nom-competence span {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 400;
 }
